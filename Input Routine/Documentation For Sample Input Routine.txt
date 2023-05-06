@@ -1,0 +1,12 @@
+Java development extends RecordLifecycle class and overrides validateRecord.
+Created an EB.API record for the java development and attached to INPUT ROUTINE hook on FT version.
+
+VERSION>FUNDS.TRANSFER,AA.ACAP
+VERSION>FUNDS.TRANSFER,AC
+EB.API>FTVERSIONTEST
+ACCOUNT>79057
+CAD
+ACCOUNT>80087
+USD
+ACCOUNT>80144
+USD
