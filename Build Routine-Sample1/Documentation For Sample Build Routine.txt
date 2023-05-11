@@ -1,0 +1,9 @@
+Java development extends the Enquiry class and overrides the setFilterCriteria method.
+Created an EB.API record for the java development and attached to BUILD ROUTINE hook on FT version.
+
+ENQUIRY>ACCT.CATEG.FILTER	
+ENQUIRY>ACCT.CATEG.FILTER.CTRL
+EB.API>ACCTFILTERCATEGORY
+
+CATEGORY>6001
+CATEGORY>1001
