@@ -1,0 +1,3 @@
+Java development using T24Context class to implement direct access to T24 without creating PGM.FILE or EB.API record.
+
+The class includes a main method to allow the class to run by itself.
