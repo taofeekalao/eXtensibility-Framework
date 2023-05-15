@@ -1,0 +1,8 @@
+Java development using extending Enquiry class to implement a NoFile Enquiry and overriding setIds method. Create an EB.API record to attach to STANDARD.SELECTION application.
+
+
+EB.API>NOFILE.ACCT.BAL.CUSID
+ENQUITY>ACCT.BAL.CUSID
+STANDARD.SELECTION>NOFILE.ACCT.BAL.CUSID
+CUSTOMER>190085
+CUSTOMER>100100
