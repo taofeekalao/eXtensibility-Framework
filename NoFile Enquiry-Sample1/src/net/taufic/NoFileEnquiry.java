@@ -21,7 +21,7 @@ public class NoFileEnquiry extends Enquiry {
     @Override
     public List<String> setIds(List<FilterCriteria> filterCriteria, EnquiryContext enquiryContext) {
         Customer customer = new Customer(this);
-        DataAccess dataAccess = new DataAccess();
+        DataAccess dataAccess = new DataAccess(this);
 
         String customerId = filterCriteria.get(0).getValue();
 
@@ -32,13 +32,11 @@ public class NoFileEnquiry extends Enquiry {
 
         try {
             List<String> accountNumbers = customer.getAccountNumbers();
-            Double workingBalance = 0.0;
             for (String accountNumber : accountNumbers) {
                 accountRecord = new AccountRecord(dataAccess.getRecord("ACCOUNT", accountNumber));
                 if (!(accountRecord.getWorkingBalance().getValue().isEmpty()
                         || accountRecord.getWorkingBalance().getValue().equals(""))) {
-                    workingBalance = Double.parseDouble(accountRecord.getWorkingBalance().getValue());
-                    consolidatedBalance += workingBalance;
+                    consolidatedBalance += Double.parseDouble(accountRecord.getWorkingBalance().getValue());
                 } else {
                     continue;
                 }
